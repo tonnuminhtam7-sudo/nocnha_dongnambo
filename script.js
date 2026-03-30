@@ -29,13 +29,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Gallery data (chỉ dùng hình Núi Bà Đen)
+// ==================== GALLERY - HÌNH ẢNH TỪ GOOGLE SITES ====================
 const galleryImages = [
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/N%C3%BAi_B%C3%A0_%C4%90en_T%C3%A2y_Ninh.jpg/1280px-N%C3%BAi_B%C3%A0_%C4%90en_T%C3%A2y_Ninh.jpg", caption: "Toàn cảnh hùng vĩ" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/N%C3%BAi_B%C3%A0_%C4%90en.jpg/1280px-N%C3%BAi_B%C3%A0_%C4%90en.jpg", caption: "Cáp treo lên đỉnh" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/N%C3%BAi_B%C3%A0_%C4%90en_T%C3%A2y_Ninh.jpg/1280px-N%C3%BAi_B%C3%A0_%C4%90en_T%C3%A2y_Ninh.jpg", caption: "Linh Sơn Thánh Mẫu" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/N%C3%BAi_B%C3%A0_%C4%90en.jpg/1280px-N%C3%BAi_B%C3%A0_%C4%90en.jpg", caption: "Hoàng hôn trên đỉnh" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/N%C3%BAi_B%C3%A0_%C4%90en_T%C3%A2y_Ninh.jpg/1280px-N%C3%BAi_B%C3%A0_%C4%90en_T%C3%A2y_Ninh.jpg", caption: "Mây bao phủ núi" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/N%C3%BAi_B%C3%A0_%C4%90en.jpg/1280px-N%C3%BAi_B%C3%A0_%C4%90en.jpg", caption: "Tượng Phật Bà Quan Âm" }
+    { src: "https://YOUR_GOOGLE_SITES_GALLERY_1_URL_HERE", caption: "Toàn cảnh Núi Bà Đen" },
+    { src: "https://YOUR_GOOGLE_SITES_GALLERY_2_URL_HERE", caption: "Cáp treo lên đỉnh" },
+    { src: "https://YOUR_GOOGLE_SITES_GALLERY_3_URL_HERE", caption: "Chùa Linh Sơn Thánh Mẫu" },
+    { src: "https://YOUR_GOOGLE_SITES_GALLERY_4_URL_HERE", caption: "Tượng Phật Bà Quan Âm" },
+    { src: "https://YOUR_GOOGLE_SITES_GALLERY_5_URL_HERE", caption: "Hoàng hôn trên đỉnh núi" },
+    { src: "https://YOUR_GOOGLE_SITES_GALLERY_6_URL_HERE", caption: "Mây bao phủ núi thiêng" }
 ];
 
 // Render gallery + lightbox
