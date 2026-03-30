@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Núi Bà Đen - Nóc nhà Nam Bộ | Khám phá núi thiêng cao nhất Nam Bộ, Tây Ninh">
+    <title>Núi Bà Đen – Nóc nhà Nam Bộ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#f8f5eb] text-[#1a3c1a] dark:bg-[#0f1f0f] dark:text-[#f0f0e0]">
+    <!-- NAVBAR -->
+    <nav id="navbar" class="bg-white/90 dark:bg-[#1a3c1a]/90 backdrop-blur-md fixed top-0 w-full z-50 border-b border-[#1a3c1a]/10 dark:border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <span class="text-3xl">🏔️</span>
+                <h1 class="text-2xl font-bold tracking-tight">NÚI BÀ ĐEN</h1>
+            </div>
+            <div class="hidden md:flex items-center gap-8 font-medium">
+                <a href="#gioi-thieu" class="hover:text-[#f5d300] transition">Giới thiệu</a>
+                <a href="#trai-nghiem" class="hover:text-[#f5d300] transition">Trải nghiệm</a>
+                <a href="#gallery" class="hover:text-[#f5d300] transition">Thư viện ảnh</a>
+                <a href="#ban-do" class="hover:text-[#f5d300] transition">Bản đồ</a>
+                <a href="#timeline" class="hover:text-[#f5d300] transition">Lịch trình</a>
+                <a href="#faq" class="hover:text-[#f5d300] transition">FAQ</a>
+                <a href="#lien-he" class="hover:text-[#f5d300] transition">Liên hệ</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <button onclick="toggleDarkMode()" id="dark-toggle"
+                        class="w-10 h-10 flex items-center justify-center rounded-2xl bg-[#1a3c1a]/10 hover:bg-[#f5d300] text-xl transition">
+                    🌙
+                </button>
+                <button onclick="document.getElementById('lien-he').scrollIntoView({behavior:'smooth'})"
+                        class="px-6 py-3 bg-[#f5d300] hover:bg-yellow-300 text-[#1a3c1a] font-semibold rounded-3xl text-sm">
+                    ĐẶT TOUR
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="hero" class="h-screen relative flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/N%C3%BAi_B%C3%A0_%C4%90en_T%C3%A2y_Ninh.jpg/1920px-N%C3%BAi_B%C3%A0_%C4%90en_T%C3%A2y_Ninh.jpg')] bg-cover bg-center bg-no-repeat parallax"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-black/70"></div>
+        
+        <div class="relative z-10 text-center text-white max-w-4xl px-6">
+            <h1 class="text-5xl md:text-7xl font-bold leading-none tracking-[-2px] mb-4">
+                NÚI BÀ ĐEN<br><span class="text-[#f5d300]">– Nóc nhà Nam Bộ –</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-md mx-auto">986m • Tây Ninh • Ngọn núi thiêng hùng vĩ nhất miền Nam</p>
+            <button onclick="document.getElementById('gioi-thieu').scrollIntoView({behavior:'smooth'})"
+                    class="group px-10 py-6 bg-white text-[#1a3c1a] font-semibold text-lg rounded-3xl flex items-center gap-3 mx-auto hover:scale-105 transition">
+                KHÁM PHÁ NGAY
+                <span class="text-3xl group-active:rotate-45 transition">→</span>
+            </button>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 flex flex-col items-center text-white/80 text-sm">
+            <span>Cuộn xuống</span>
+            <div class="w-px h-12 bg-white/50 mt-2 animate-bounce"></div>
+        </div>
+    </header>
+
+    <!-- GIỚI THIỆU -->
+    <section id="gioi-thieu" class="max-w-7xl mx-auto px-6 py-24">
+        <div class="grid md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-7">
+                <span class="text-[#f5d300] font-semibold">VỀ NÚI BÀ ĐEN</span>
+                <h2 class="text-4xl md:text-5xl font-bold leading-tight mt-3 mb-8">Ngọn núi thiêng cao nhất Nam Bộ</h2>
+                <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+                    Núi Bà Đen nằm tại huyện Dương Minh Châu, tỉnh Tây Ninh, cao 986m. 
+                    Đây là biểu tượng tâm linh và thiên nhiên của miền Nam với đền thờ Linh Sơn Thánh Mẫu (Bà Đen), 
+                    hệ sinh thái rừng nguyên sinh và cảnh quan hùng vĩ. 
+                </p>
+                <div class="mt-10 flex gap-8">
+                    <div><strong class="block text-3xl">986m</strong><span class="text-sm">Độ cao</span></div>
+                    <div><strong class="block text-3xl">100km</strong><span class="text-sm">Từ TP.HCM</span></div>
+                    <div><strong class="block text-3xl">🛕</strong><span class="text-sm">Linh thiêng</span></div>
+                </div>
+            </div>
+            <div class="md:col-span-5">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/N%C3%BAi_B%C3%A0_%C4%90en.jpg/1280px-N%C3%BAi_B%C3%A0_%C4%90en.jpg" 
+                     alt="Núi Bà Đen" class="rounded-3xl shadow-2xl w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- TRẢI NGHIỆM -->
+    <section id="trai-nghiem" class="bg-[#1a3c1a] text-white py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Trải nghiệm nổi bật</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white/10 backdrop-blur-xl rounded-3xl p-8 hover:scale-105 transition group">
+                    <div class="text-6xl mb-6">🚠</div>
+                    <h3 class="text-2xl font-semibold mb-3">Cáp treo hiện đại</h3>
+                    <p class="text-white/80">Chỉ 15 phút từ chân núi lên đỉnh. Vé khứ hồi 300.000 VNĐ.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white/10 backdrop-blur-xl rounded-3xl p-8 hover:scale-105 transition group">
+                    <div class="text-6xl mb-6">🥾</div>
+                    <h3 class="text-2xl font-semibold mb-3">Leo bộ thử thách</h3>
+                    <p class="text-white/80">1.200 bậc thang đá – 4-6 giờ chinh phục thiên nhiên.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white/10 backdrop-blur-xl rounded-3xl p-8 hover:scale-105 transition group">
+                    <div class="text-6xl mb-6">🛕</div>
+                    <h3 class="text-2xl font-semibold mb-3">Chùa Linh Sơn Thánh Mẫu</h3>
+                    <p class="text-white/80">Đền thờ Bà Đen &amp; Tượng Phật Bà Quan Âm cao 72m.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-white/10 backdrop-blur-xl rounded-3xl p-8 hover:scale-105 transition group">
+                    <div class="text-6xl mb-6">📸</div>
+                    <h3 class="text-2xl font-semibold mb-3">Check-in đỉnh núi</h3>
+                    <p class="text-white/80">View 360° mây trời, hoàng hôn và bình minh đẹp nhất Tây Ninh.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="max-w-7xl mx-auto px-6 py-24">
+        <h2 class="text-4xl font-bold text-center mb-12">Thư viện ảnh Núi Bà Đen</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="gallery-grid">
+            <!-- JS sẽ render hình -->
+        </div>
+    </section>
+
+    <!-- BẢN ĐỒ -->
+    <section id="ban-do" class="py-24 bg-white dark:bg-[#1a3c1a]">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Vị trí Núi Bà Đen</h2>
+            <div class="rounded-3xl overflow-hidden shadow-2xl">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.5!2d106.1333!3d11.3667!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d8b8b8b8b8b8%3A0x0!2zTmjhuq1pIELDoSDEkWVu!5e0!3m2!1svi!2sVN!4v1710000000000" 
+                        width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section id="timeline" class="max-w-7xl mx-auto px-6 py-24">
+        <h2 class="text-4xl font-bold text-center mb-12">Lịch trình 1 ngày</h2>
+        <div class="relative border-l-4 border-[#f5d300] pl-8 max-w-2xl mx-auto space-y-12">
+            <div class="relative">
+                <div class="absolute -left-[21px] w-9 h-9 bg-[#f5d300] text-[#1a3c1a] rounded-full flex items-center justify-center font-bold">08:00</div>
+                <h3 class="font-semibold text-xl">Đến chân núi – Ăn sáng</h3>
+                <p class="text-gray-600 dark:text-gray-400">Thưởng thức bánh xèo Tây Ninh</p>
+            </div>
+            <div class="relative">
+                <div class="absolute -left-[21px] w-9 h-9 bg-[#f5d300] text-[#1a3c1a] rounded-full flex items-center justify-center font-bold">09:30</div>
+                <h3 class="font-semibold text-xl">Cáp treo lên đỉnh</h3>
+                <p class="text-gray-600 dark:text-gray-400">15 phút – ngắm toàn cảnh</p>
+            </div>
+            <div class="relative">
+                <div class="absolute -left-[21px] w-9 h-9 bg-[#f5d300] text-[#1a3c1a] rounded-full flex items-center justify-center font-bold">11:00</div>
+                <h3 class="font-semibold text-xl">Thăm chùa Linh Sơn Thánh Mẫu</h3>
+                <p class="text-gray-600 dark:text-gray-400">Cầu bình an &amp; chụp ảnh Tượng Phật Bà</p>
+            </div>
+            <div class="relative">
+                <div class="absolute -left-[21px] w-9 h-9 bg-[#f5d300] text-[#1a3c1a] rounded-full flex items-center justify-center font-bold">14:00</div>
+                <h3 class="font-semibold text-xl">Leo bộ hoặc ngắm hoàng hôn</h3>
+                <p class="text-gray-600 dark:text-gray-400">Trải nghiệm thiên nhiên</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="max-w-4xl mx-auto px-6 py-24">
+        <h2 class="text-4xl font-bold text-center mb-12">Câu hỏi thường gặp</h2>
+        <div class="space-y-4" id="faq-list">
+            <!-- JS render accordion -->
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="lien-he" class="bg-[#1a3c1a] text-white py-24">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Liên hệ &amp; Đặt tour</h2>
+            <form id="contact-form" class="space-y-8">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <input type="text" id="name" placeholder="Họ và tên" required
+                           class="bg-white/10 border border-white/30 rounded-3xl px-6 py-5 focus:outline-none focus:border-[#f5d300]">
+                    <input type="email" id="email" placeholder="Email" required
+                           class="bg-white/10 border border-white/30 rounded-3xl px-6 py-5 focus:outline-none focus:border-[#f5d300]">
+                </div>
+                <textarea id="message" rows="5" placeholder="Nội dung tin nhắn..." required
+                          class="bg-white/10 border border-white/30 rounded-3xl px-6 py-5 w-full focus:outline-none focus:border-[#f5d300]"></textarea>
+                <button type="submit"
+                        class="w-full py-6 bg-[#f5d300] text-[#1a3c1a] font-bold rounded-3xl text-lg hover:bg-yellow-300 transition">
+                    GỬI THÔNG TIN
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#0f1f0f] text-white/70 py-12 text-center text-sm">
+        <p>© 2026 Núi Bà Đen – Tây Ninh | Website demo bởi Grok</p>
+        <p class="mt-2">Chỉ dùng hình ảnh thực tế của Núi Bà Đen</p>
+    </footer>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="hidden fixed inset-0 bg-black/95 z-[9999] flex items-center justify-center">
+        <button onclick="hideLightbox()" class="absolute top-8 right-8 text-white text-5xl">✕</button>
+        <img id="lightbox-img" src="" class="max-h-[90vh] max-w-[95%] rounded-3xl" alt="">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
